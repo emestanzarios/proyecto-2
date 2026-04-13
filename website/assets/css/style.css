@@ -1,6 +1,7 @@
-body{
+body {
     background: #BDBDBD;
 }
+
 /*Template portfolio*/
 .contenedor-tarjetas {
     display: flex;
@@ -32,6 +33,7 @@ body{
     background-color: #6b4530;
     color: white;
 }
+
 /* Footer */
 .footer-principal {
     background-color: #1a1a1a;
