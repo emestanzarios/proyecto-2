@@ -1,25 +1,27 @@
-<!-- your html code here -->
-<section id="contact" class="container my-5 p-4 rounded" style="background-color: #C49A5A;">
+<!-- Contact -->
+
+<section class="container my-5 p-4 rounded" style="background-color: #C49A5A;">
 
     <h2 class="text-center mb-4">Contacta con nosotros</h2>
 
-    <form>
+    <form id="formulario">
         <div class="mb-3">
             <label class="form-label">Nombre</label>
-            <input type="text" class="form-control" placeholder="Tu nombre">
+            <input type="text" id="nombre" class="form-control" placeholder="Tu nombre">
         </div>
 
         <div class="mb-3">
             <label class="form-label">Email</label>
-            <input type="email" class="form-control" placeholder="Tu email">
+            <input type="email" id="email" class="form-control" placeholder="Tu email">
         </div>
 
         <div class="mb-3">
             <label class="form-label">Mensaje</label>
-            <textarea class="form-control" rows="5" placeholder="Escribe tu mensaje"></textarea>
+            <textarea id="mensaje" class="form-control" rows="5" placeholder="Escribe tu mensaje"></textarea>
         </div>
 
-        <button class="btn text-white w-100" style="background-color: #6B3A2A; border-color: #6B3A2A;">Enviar</button>
+        <button type="submit" class="btn text-white w-100" style="background-color: #6B3A2A; border-color: #6B3A2A;">Enviar</button>
+        <div id="respuesta"></div>
     </form>
 
     <div class="text-center mt-4">
