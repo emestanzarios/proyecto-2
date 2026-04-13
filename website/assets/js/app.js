@@ -1,17 +1,24 @@
-document.querySelector(".btn-contact").addEventListener("click", () => {
-  document.getElementById("contact").scrollIntoView({
-    behavior: "smooth"
-  });
-});
+setTimeout(function() {
 
-document.querySelector(".btn-services").addEventListener("click", () => {
-  document.getElementById("services").scrollIntoView({
-    behavior: "smooth"
-  });
-});
+    const formulario = document.getElementById("formulario");
 
-document.querySelector(".btn-portafolio").addEventListener("click", () => {
-  document.getElementById("portafolio").scrollIntoView({
-    behavior: "smooth"
-  });
-});
+    formulario.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        const nombre = document.getElementById("nombre").value;
+        const email = document.getElementById("email").value;
+        const mensaje = document.getElementById("mensaje").value;
+
+        const respuesta = document.getElementById("respuesta");
+
+        if (nombre === "" || email === "" || mensaje === "") {
+            respuesta.textContent = "Por favor completa todos los campos";
+            respuesta.style.color = "red";
+            
+        } else {
+            respuesta.textContent = "Hemos recibido tu solicitud";
+            respuesta.style.color = "green";
+        }
+    });
+
+}, 1000);
